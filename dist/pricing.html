@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="logo" href="#">
+              <div class="logo__img">
+                <svg
+                  width="40"
+                  height="37"
+                  viewBox="0 0 40 37"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.13307 34.4587C1.40988 34.4587 1.6082e-07 33.0488 1.49105e-07 31.3256L7.46349e-08 20.372L7.88626 20.372L7.88626 20.3598L12.6263 20.3598C13.8482 20.3285 14.8821 19.2633 14.8821 18.01C14.8821 16.7255 13.8168 15.6602 12.5323 15.6602L6.26614 15.6602L6.26614 15.6622L4.26148e-08 15.6622L2.13007e-08 12.5272C9.58534e-09 10.804 1.40988 9.3941 3.13307 9.3941L12.5323 9.3941C14.9134 9.3941 16.9499 10.24 18.6104 11.9319C20.3023 13.5924 21.1482 15.6289 21.1482 18.01C21.1482 20.3598 20.3336 22.3963 18.6731 24.0569C17.0126 25.7174 15.0074 26.5947 12.6576 26.626L6.26614 26.626L6.26614 31.3256C6.26614 33.0488 4.85626 34.4587 3.13307 34.4587Z"
+                    fill="#02BC6B"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M25.0975 5.7578C28.5589 9.11993 30.3031 13.3073 30.3031 18.0672C30.3031 22.7473 28.6319 26.9307 25.2239 30.3034L20.3852 25.7508C22.5047 23.6533 23.545 21.128 23.545 18.0672C23.545 14.9832 22.4734 12.4619 20.3031 10.3538L25.0975 5.7578Z"
+                    fill="#02897A"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M32.5055 -3.14562e-08C37.4911 4.97781 39.9999 11.1499 39.9999 18.2338C39.9999 25.2071 37.5922 31.3753 32.6884 36.3638L28.0186 31.8009C31.6715 28.085 33.4614 23.5781 33.4614 18.2338C33.4614 12.8358 31.6111 8.33276 27.8787 4.60616L32.5055 -3.14562e-08Z"
+                    fill="#035B81"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M0 26.6524L6.26614 26.6524L6.26614 31.326C6.26614 33.0492 4.85626 34.4591 3.13307 34.4591C1.40988 34.4591 4.34898e-08 33.0492 3.17744e-08 31.326L0 26.6524Z"
+                    fill="#028E37"
+                  />
+                </svg>
+              </div>
+              <p class="logo__name">Product</p>
+            </a>
+            <div class="header__nav user-nav">
+              <ul class="user-nav__list">
+                <li class="user-nav__item">
+                  <a class="user-nav__link" href="index.html"> Product </a>
+                </li>
+                <li class="user-nav__item">
+                  <a class="user-nav__link" href="customers.html"> Customers </a>
+                </li>
+                <li class="user-nav__item user-nav__item--current">
+                  <a class="user-nav__link" href="#"> Pricing </a>
+                </li>
+                <li class="user-nav__item">
+                  <a class="user-nav__link" href="resources.html"> Resources </a>
+                </li>
+              </ul>
+              <a class="user-nav__btn user-nav__btn--login" href="#">Sign In</a>
+              <a class="user-nav__btn user-nav__btn--register" href="#"
+                >Sign Up</a
+              >
+              <button class="user-nav__theme">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22ZM12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4Z"
+                    fill="#02897A"
+                  />
+                  <path
+                    d="M19 12C19 8.134 15.865 5 12 5V19C15.865 19 19 15.866 19 12Z"
+                    fill="#02897A"
+                  />
+                </svg>
+              </button>
+            </div>
+            <button class="header__burger-menu">
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <section class="pricing">
+        <div class="container">
+            <h6 class="pricing__section-title">
+                PRICING
+            </h6>
+            <h3 class="pricing__title">
+                Let’s get some real work done here.
+            </h3>
+            <p class="pricing__info">
+                Prodict is your perfect solution for working. Get started now for free
+            </p>
+            <div class="price__inner">
+                <div class="price__item version">
+                    <h4 class="version__title">
+                        Free
+                    </h4>
+                    <p class="version__description">Brief price description</p>
+                    <div class="version__cost">
+                        0
+                    </div>
+                    <ul class="price__advantages advantages-list">
+                        <li class="advantages-list__item">Only 2 Operators</li>
+                        <li class="advantages-list__item">Notifications</li>
+                        <li class="advantages-list__item">Landing Pages</li>
+                    </ul>
+                    <a class="price__btn" href="#">Order now</a>
+                </div>
+
+                <div class="price__item version">
+                    <h4 class="version__title">
+                        Standard
+                    </h4>
+                    <p class="version__description">Brief price description</p>
+                    <div class="version__cost">
+                        5
+                    </div>
+                    <ul class="price__advantages advantages-list">
+                        <li class="advantages-list__item">5+ Operators</li>
+                        <li class="advantages-list__item">Notifications</li>
+                        <li class="advantages-list__item">Landing Pages</li>
+                    </ul>
+                    <a class="price__btn version__btn" href="#">Order now</a>
+                </div>
+
+                <div class="price__item version">
+                    <h4 class="version__title">
+                        Premium
+                    </h4>
+                    <p class="version__description">Brief price description</p>
+                    <div class="version__cost">
+                        10
+                    </div>
+                    <ul class="price__advantages advantages-list">
+                        <li class="advantages-list__item">10+ Operators</li>
+                        <li class="advantages-list__item">Notifications</li>
+                        <li class="advantages-list__item">Landing Pages</li>
+                    </ul>
+                    <a class="price__btn" href="#">Order now</a>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="plan">
+        <div class="container">
+            <h4 class="plan__section-name">
+                ENTERPRISE
+            </h4>
+            <h3 class="plan__main-text">
+                Are you interested  in a custom-tailored plan?
+            </h3>
+            <p class="plan__text">Product is a set of advanced features for really large teams with projects.</p>
+            <a class="plan__contact-btn" href="#">Get in touch with us</a>
+        </div>
+      </section>
+
+      <section class="effects">
+        <div class="container">
+            <h3 class="effects__title section-title">
+                Product is being used with great effects alongside:
+            </h3>
+        <div class="effects__inner">
+            <img class="effects__img" src="img/effects.png">
+            </img>
+            <div class="effects__side-info">
+                <div class="effects__item">
+                    <div class="effects__item-title effects__item-title--enterpreneur">
+                        Enterpreneur
+                    </div>
+                    <p class="effects__item-info">
+                        Product is a great way to help medium and samall enterprise owners achieve their goals
+                    </p>
+                </div>
+                <div class="effects__item">
+                    <div class="effects__item-title effects__item-title--accountants">
+                        Accountants
+                    </div>
+                    <p class="effects__item-info">
+                        Whether you are working on contract with clients, or on other key accounting documents, Product is for you
+                    </p>
+                </div>
+                <div class="effects__item">
+                    <div class="effects__item-title effects__item-title--universities">
+                        Universities
+                    </div>
+                    <p class="effects__item-info">
+                        Organize university projects and have documents easily graded online with Product
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+      </section>
+
+      <section class="questions">
+        <div class="container">
+            <h3 class="questions__title section-title">
+                Frequently asked question
+            </h3>
+            <h6 class="questions__subtitle">
+                Something is not clear? You need help? Check our FAQ section
+            </h6>
+            <div class="questions__wrapper">
+                <div class="questions__item question">
+                    <span class="question__icon"></span>
+                    <p class="question__text">What are my payment option?</p>
+                    <p class="question__answer">After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically. Then, invited user will have to confirm his account by e-mail and finish userd onboarding.</p>
+                </div>
+                <div class="questions__item question">
+                    <span class="question__icon"></span>
+                    <p class="question__text">How can I invite collaborator to platform?</p>
+                    <p class="question__answer">After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically. Then, invited user will have to confirm his account by e-mail and finish userd onboarding.</p>
+                </div>
+                <div class="questions__item question">
+                    <span class="question__icon"></span>
+                    <p class="question__text">Can I upgrade my plan?</p>
+                    <p class="question__answer">After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically. Then, invited user will have to confirm his account by e-mail and finish userd onboarding.</p>
+                </div>
+                <div class="questions__item question">
+                    <span class="question__icon"></span>
+                    <p class="question__text">Can I cancel my plan at anytime?</p>
+                    <p class="question__answer">After creating your account you will have an oppurtunity to create your first project that will be associated withthe collaborators e-mail. An invitation  will be sent automatically. Then, invited user will have to confirm his account by e-mail and finish userd onboarding.</p>
+                </div>
+            </div>
+        </div>
+      </section>
+          <section class="banner">
+        <div class="container">
+            <div class="banner-block">
+                <div class="banner-block__left">
+                    <h4 class="banner-block__info">Join 100 Compannies who boost their business with Product</h4>
+                    <a class="banner-block__btn" href="#">Get this</a>
+                </div>
+                <div class="banner-block__images">
+                    <img class="banner-block__img" src="img/icons/statistics.png"></img>
+                </div>
+            </div>
+        </div>
+    </section>
+      <footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__item">
+        <a class="logo" href="#">
+          <div class="logo__img">
+            <svg
+              width="40"
+              height="37"
+              viewBox="0 0 40 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M3.13307 34.4587C1.40988 34.4587 1.6082e-07 33.0488 1.49105e-07 31.3256L7.46349e-08 20.372L7.88626 20.372L7.88626 20.3598L12.6263 20.3598C13.8482 20.3285 14.8821 19.2633 14.8821 18.01C14.8821 16.7255 13.8168 15.6602 12.5323 15.6602L6.26614 15.6602L6.26614 15.6622L4.26148e-08 15.6622L2.13007e-08 12.5272C9.58534e-09 10.804 1.40988 9.3941 3.13307 9.3941L12.5323 9.3941C14.9134 9.3941 16.9499 10.24 18.6104 11.9319C20.3023 13.5924 21.1482 15.6289 21.1482 18.01C21.1482 20.3598 20.3336 22.3963 18.6731 24.0569C17.0126 25.7174 15.0074 26.5947 12.6576 26.626L6.26614 26.626L6.26614 31.3256C6.26614 33.0488 4.85626 34.4587 3.13307 34.4587Z"
+                fill="#02BC6B"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M25.0975 5.7578C28.5589 9.11993 30.3031 13.3073 30.3031 18.0672C30.3031 22.7473 28.6319 26.9307 25.2239 30.3034L20.3852 25.7508C22.5047 23.6533 23.545 21.128 23.545 18.0672C23.545 14.9832 22.4734 12.4619 20.3031 10.3538L25.0975 5.7578Z"
+                fill="#02897A"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M32.5055 -3.14562e-08C37.4911 4.97781 39.9999 11.1499 39.9999 18.2338C39.9999 25.2071 37.5922 31.3753 32.6884 36.3638L28.0186 31.8009C31.6715 28.085 33.4614 23.5781 33.4614 18.2338C33.4614 12.8358 31.6111 8.33276 27.8787 4.60616L32.5055 -3.14562e-08Z"
+                fill="#035B81"
+              />
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 26.6524L6.26614 26.6524L6.26614 31.326C6.26614 33.0492 4.85626 34.4591 3.13307 34.4591C1.40988 34.4591 4.34898e-08 33.0492 3.17744e-08 31.326L0 26.6524Z"
+                fill="#028E37"
+              />
+            </svg>
+          </div>
+          <p class="logo__name">Product</p>
+        </a>
+        <ul class="footer__social-list">
+          <li class="footer__social-link">
+            <a class="footer__social-icon footer__social-icon--instagram" href="#">
+              <svg
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17 2.01611H7C4.23858 2.01611 2 4.25469 2 7.01611V17.0161C2 19.7775 4.23858 22.0161 7 22.0161H17C19.7614 22.0161 22 19.7775 22 17.0161V7.01611C22 4.25469 19.7614 2.01611 17 2.01611Z"
+                  stroke="#02897A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16 11.3859C16.1234 12.2182 15.9812 13.0681 15.5937 13.8149C15.2062 14.5617 14.5931 15.1673 13.8416 15.5456C13.0901 15.9239 12.2384 16.0555 11.4077 15.9219C10.5771 15.7882 9.80971 15.396 9.21479 14.8011C8.61987 14.2062 8.22768 13.4388 8.09402 12.6081C7.96035 11.7775 8.09202 10.9258 8.47028 10.1743C8.84854 9.42278 9.45414 8.80967 10.2009 8.42217C10.9477 8.03467 11.7977 7.89251 12.63 8.01593C13.4789 8.14181 14.2648 8.53739 14.8716 9.14423C15.4785 9.75108 15.8741 10.537 16 11.3859Z"
+                  stroke="#02897A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M17.5 6.51611H17.51"
+                  stroke="#02897A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-link">
+            <a class="footer__social-icon footer__social-icon--facebook" href="#">
+              <svg
+                width="13"
+                height="22"
+                viewBox="0 0 13 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 1H9C7.67392 1 6.40215 1.52678 5.46447 2.46447C4.52678 3.40215 4 4.67392 4 6V9H1V13H4V21H8V13H11L12 9H8V6C8 5.73478 8.10536 5.48043 8.29289 5.29289C8.48043 5.10536 8.73478 5 9 5H12V1Z"
+                  stroke="#02897A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__social-link">
+            <a class="footer__social-icon footer__social-icon--twitter" href="#">
+              <svg
+                width="24"
+                height="20"
+                viewBox="0 0 24 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M23 1.01006C22.0424 1.68553 20.9821 2.20217 19.86 2.54006C19.2577 1.84757 18.4573 1.35675 17.567 1.13398C16.6767 0.911216 15.7395 0.967251 14.8821 1.29451C14.0247 1.62177 13.2884 2.20446 12.773 2.96377C12.2575 3.72309 11.9877 4.62239 12 5.54006V6.54006C10.2426 6.58562 8.50127 6.19587 6.93101 5.4055C5.36074 4.61513 4.01032 3.44869 3 2.01006C3 2.01006 -1 11.0101 8 15.0101C5.94053 16.408 3.48716 17.109 1 17.0101C10 22.0101 21 17.0101 21 5.51006C20.9991 5.23151 20.9723 4.95365 20.92 4.68006C21.9406 3.67355 22.6608 2.40277 23 1.01006V1.01006Z"
+                  stroke="#02897A"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__item">
+        <p class="footer__item-title">Resource</p>
+        <ul class="footer__nav nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">About us</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Blog</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Contact</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item">
+        <p class="footer__item-title">Legal Stuff</p>
+        <ul class="footer__nav nav-list">
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Disclaimer</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Financing</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Privacy Policy</a>
+          </li>
+          <li class="nav-list__item">
+            <a class="nav-list__link" href="#">Terms of Service</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__item footer__item-form">
+        <p class="footer__item-title">
+          knowing you're always on the best energy deal.
+        </p>
+        <form action="" class="footer__form">
+          <input class="footer__form-input" type="text" />
+          <button class="footer__form-btn">Sign up Now</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      Made With Love By Figmaland All Right Reserved
+    </div>
+  </div>
+</footer>
+
+</body>
+
+<script src="js/app.min.js"></script>
+
+</html>

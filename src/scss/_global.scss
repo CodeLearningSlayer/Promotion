@@ -4,10 +4,102 @@ body{
     font-size: 16px;
     line-height: 26px;
     color: #22343D;
+    &.dark-theme{
+        background-color: #1F2E35;
+        color: #fff;
+        .logo{
+            color: #fff;
+        }
+        .user-nav{
+            &__link{
+                color: #fff;
+            }
+            &__btn{
+                color: #fff;
+            }
+        }
+        .product-specs{
+            &::after{
+                background: linear-gradient(#1F2E35 ,#22343D, #434343);
+            }
+        }
+        .experts{
+            &::after{
+                background: linear-gradient(#434343 ,#22343D, #1F2E35);
+            }
+            &__text{
+                color:#22343D;
+            }
+        }
+        .strategies-article{
+            border: none;
+            &__img{
+                border-radius: 8px 8px 0 0;
+            }
+            &__inner{
+                background-color:#fff;
+                color:#22343D;
+                border-radius: 0 0 8px 8px ;
+            }
+        }
+        .swiper-pagination-bullet{
+            background: #EFEFEF;
+            opacity: 1;
+        }
+       .swiper-pagination-bullet-active{
+            background: $green;
+        }
+        .version{
+            background-color: #fff;
+            color:#22343D;
+            &:hover{
+                background-color: $green;
+                *{
+                    color: #fff;
+                }
+                .price__btn{
+                    background-color: #fff;
+                    color: $green;
+                }
+                .version__cost::before{
+                    color:#fff;
+                }
+            }
+        }
+        .reviews-block{
+            &__item{
+                background-color: #fff;
+            }
+            &__text{
+                color:#737373;
+            }
+        }
+        .reviewer{
+            &__position{
+                color:#22343D;
+            }
+        }
+        .footer{
+
+        }
+        .nav-list{
+            &__link{
+                color:#fff;
+            }
+        }
+    }
 }
 
 .title{
+    text-align: center;
     font-size: 32px;
     line-height: 48px;
     font-weight: 700;
+}
+
+.section-title{
+    font-size: 34px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 51px;
 }
