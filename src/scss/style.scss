@@ -10,15 +10,56 @@
     padding: 0 15px;
 }
 
+.overlay{
+    transition: all .3s;
+}
+
+.overlay--active{
+    filter: blur(10px);
+}
 
 .header{
     padding: 19px 0;
+    z-index: 100;
     &__inner{
         display: flex;
         justify-content: space-between;
+        align-items: center;
     }
     &__burger-menu{
+        padding: 0;
+        cursor: pointer;
+        transition: all .3s;
         display: none;
+        width: 28px;
+        background-color: transparent;
+        border:none;
+        height: 31px;
+        position: relative;
+        span{
+            background-color: #22343D;
+            display: block;
+            width: 28px;
+            border-radius: 5px;
+            height: 3px;
+        }
+        &::after,
+        &::before{
+            content: "";
+            position: absolute;
+            background-color: #22343D;
+            width: 28px;
+            border-radius: 5px;
+            height: 3px;
+        }
+        &::after{
+            top:5px;
+            left: 0;
+        }
+        &::before{
+            bottom:5px;
+            left: 0;
+        }
     }
     &__nav{
         display: flex;
@@ -38,10 +79,14 @@
     }
 }
 
+ul.user-nav__list{
+    margin-right: 24px;
+}
+
 .user-nav{
+    transition: all .3s;
     &__list{
         display: flex;
-        margin-right: 24px !important; //перебиваю reset
     }
     &__item{
         &+.user-nav__item{
@@ -996,6 +1041,10 @@ ul.advantages-list{
         margin-bottom: 50px;
         text-align: center;
     }
+    &__wrapper{
+        max-width: 920px;
+        margin: 0 auto;
+    }
 }
 
 .question{
@@ -1157,27 +1206,21 @@ ul.advantages-list{
     &__article{
         margin: 0;
     }
-    &__more{
-        text-align: center;
-    }
     &__more-link{
         font-size: 18px;
         font-weight: 500;
         line-height: 26px;
-        padding-right: 28px;
         color:#22343D;
-        position: relative;
-        &::after{
-            content: "";
-            position: absolute;
-            right: 0;
-            top:50%;
-            transform: translateY(-50%);
-            width: 21px;
-            background-repeat: no-repeat;
-            height: 21px;
-            background-image: url("@img/icons/right arrow.svg");
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        path{
+            fill:#22343D;
         }
+    }
+    &__more-icon{
+        display: inline-flex;
+        padding-left: 8px;
     }
 }
 

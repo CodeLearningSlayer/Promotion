@@ -1,0 +1,106 @@
+@media(max-width:1000px){
+    .user-nav{
+        &__item + .user-nav__item{
+            margin-left: 15px;
+        }
+    }
+}
+
+@media(max-width:875px){
+    .user-nav{
+        &__list--relocated{
+            justify-content: center;
+            .user-nav__item{
+                font-size: 24px;
+                line-height: 48px;
+            }
+            .user-nav__item + .user-nav__item{
+                margin-left: 30px;
+            }
+        }
+    }
+    ul.user-nav__list--relocated{
+        margin: 0;
+        margin-top: 20px;
+    }
+}
+
+@media(max-width:755px){
+    .user-nav{
+        transform: translateX(-50%);
+        top:-100%;
+        position: absolute;
+        left: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &__item{
+            font-size: 30px;
+            &+.user-nav__item{
+                margin-left: 0;
+                margin-top: 20px;
+            }
+        }
+        &__btn{
+            margin-right: 0;
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+        &__theme{
+            margin-top: 30px;
+        }
+    }
+    .user-nav--active{
+        top:100px;
+        z-index: 100;
+    }
+    ul.user-nav__list{
+        text-align: center;
+        margin: 0;
+        flex-direction: column;
+    }
+    .header{
+        &__burger-menu{
+            display: block;
+        }
+    }
+    .start{
+        &__inner{
+            flex-direction: column;
+        }
+        &__img-box{
+            order:-1;
+        }
+    }
+    .left-box{
+        text-align: center;
+    }
+}
+
+@media(max-width:400px){
+    .left-box{
+        &__title{
+            font-size: 35px;
+            line-height: 55px;
+        }
+        &__btn{
+            margin-right: 15px;
+            padding: 15px 20px;
+        }
+        &__links{
+            display: flex;
+            flex-direction: column;
+        }
+        &__video-btn{
+            margin-top: 20px;
+            padding-left: 0;
+            &::before{
+                left: 55px;
+            }
+        }
+        &__text{
+            margin-bottom: 25px;
+        }
+    }
+}

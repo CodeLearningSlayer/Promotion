@@ -55,10 +55,55 @@ function initMap() {
   
   window.initMap = initMap;
 
-  const themeButton = document.querySelector(".user-nav__theme");
-  themeButton.addEventListener("click", function(){
-    (document.body.classList.contains("dark-theme")) ? document.body.classList.remove("dark-theme") : document.body.classList.add("dark-theme");
+
+  if (localStorage.getItem('style') === 'dark') {
+    document.body.classList.toggle('dark-theme');
+  }
+  document.querySelector('.user-nav__theme').onclick = function (){
+    document.body.classList.toggle('dark-theme');
+    if (document.body.classList.contains('dark-theme')) {
+      console.log("jija");
+      localStorage.setItem('style', 'dark');
+    } 
+    else {
+      localStorage.setItem('style', '');
+    }
+  }
+
+let navList = document.querySelector(".user-nav__list");
+let navBar = document.querySelector(".user-nav");
+let isRelocated = false;
+relocateNav();
+window.onresize = relocateNav;
+function relocateNav(){
+  const neededWidth = 875;
+  console.log(document.documentElement.scrollWidth);
+  if (document.documentElement.scrollWidth <= neededWidth && document.documentElement.scrollWidth > 755 && isRelocated == false){
+    document.querySelector(".header").appendChild(navList);
+    isRelocated = true;
+    navList.classList.toggle("user-nav__list--relocated");
+  }
+  if(document.documentElement.scrollWidth > neededWidth && isRelocated == true){
+    document.querySelector(".header__nav").prepend(navList);
+    navList.classList.toggle("user-nav__list--relocated");
+    isRelocated = false;
+  }
+  if (document.documentElement.scrollWidth <= 755) {
+    document.querySelector(".header__nav").prepend(navList);
+    if (navList.classList.contains("user-nav__list--relocated"))
+    navList.classList.remove("user-nav__list--relocated");
+
+  }
+}
+let burgerBtn = document.querySelector(".header__burger-menu");
+burgerBtn.addEventListener("click", function(){
+  navBar.classList.toggle("user-nav--active");
+  let sections = document.querySelectorAll(".overlay");
+  sections.forEach(element => {
+    element.classList.toggle("overlay--active");
   })
+})
+
 
 
 flsFunctions.testWebP();

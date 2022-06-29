@@ -18,6 +18,13 @@ body{
                 color: #fff;
             }
         }
+        .header{
+            &__burger-menu span,
+            &__burger-menu::after,
+            &__burger-menu::before{
+                background-color:#fff;
+            }
+        }
         .product-specs{
             &::after{
                 background: linear-gradient(#1F2E35 ,#22343D, #434343);
@@ -79,11 +86,43 @@ body{
                 color:#22343D;
             }
         }
-        .footer{
-
-        }
+        
         .nav-list{
             &__link{
+                color:#fff;
+            }
+        }
+        .reason,
+        .join
+        {
+            background-color: #22343D;
+        }
+        .plan{
+            background: #22343D;
+        }
+        .join-us{
+            &__input{
+                background-color: transparent;
+                &::placeholder{
+                    color:#fff;
+                }
+
+            }
+        }
+        .stories{
+            &__more-link{
+                color:#fff;
+                path{
+                    fill:#fff;
+                }
+            }
+        }
+        .contact-us{
+            &__form{
+                background-color: #22343D;
+                border: 1px solid #464646;
+            }
+            &__form-top{
                 color:#fff;
             }
         }
