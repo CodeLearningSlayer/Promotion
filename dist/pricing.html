@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/style.min.css?__v=20220711184655">
     <title>Document</title>
 </head>
 <body>
@@ -93,7 +93,7 @@
         </div>
       </header>
 
-      <section class="pricing">
+      <section class="pricing overlay">
         <div class="container">
             <h6 class="pricing__section-title">
                 PRICING
@@ -156,7 +156,7 @@
         </div>
       </section>
 
-      <section class="plan">
+      <section class="plan overlay">
         <div class="container">
             <h4 class="plan__section-name">
                 ENTERPRISE
@@ -169,13 +169,15 @@
         </div>
       </section>
 
-      <section class="effects">
+      <section class="effects overlay">
         <div class="container">
             <h3 class="effects__title section-title">
-                Product is being used with great effects alongside:
+                Product is being used with great effects alongside
             </h3>
         <div class="effects__inner">
-            <img class="effects__img" src="img/effects.png">
+          <div class="effects__img-box">
+            <picture><source srcset="img/effects.webp" type="image/webp"><img class="effects__img" src="img/effects.png"></picture>
+          </div>
             </img>
             <div class="effects__side-info">
                 <div class="effects__item">
@@ -207,7 +209,7 @@
         </div>
       </section>
 
-      <section class="questions">
+      <section class="questions overlay">
         <div class="container">
             <h3 class="questions__title section-title">
                 Frequently asked question
@@ -239,15 +241,18 @@
             </div>
         </div>
       </section>
+
           <section class="banner overlay">
         <div class="container">
             <div class="banner-block">
                 <div class="banner-block__left">
                     <h4 class="banner-block__info">Join 100 Compannies who boost their business with Product</h4>
-                    <a class="banner-block__btn" href="#">Get this</a>
+                    <div class="banner-block__btn">
+                        <a class="banner-block__link" href="#">Get this</a>
+                    </div>
                 </div>
                 <div class="banner-block__images">
-                    <img class="banner-block__img" src="img/icons/statistics.png"></img>
+                    <picture><source srcset="img/icons/statistics.webp" type="image/webp"><img class="banner-block__img" src="img/icons/statistics.png"></picture></img>
                 </div>
             </div>
         </div>
@@ -421,6 +426,6 @@
 
 </body>
 
-<script src="js/app.min.js"></script>
+<script src="js/app.min.js?__v=20220711184655"></script>
 
 </html>

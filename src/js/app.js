@@ -5,17 +5,48 @@ import "jquery";
 import raterJs from "rater-js";
 import "raty-js";
 
-const blogSwiper = new Swiper (".swiper", {
-    loop: true,
-    modules: [Pagination],
-    direction: 'horizontal',
-    centeredSlides: "true",
-    initialSlide:1,
-    slidesPerView: 3,
-    pagination:{
-        el: '.swiper-pagination',
-    },
-})
+let blogSwiper;
+
+function enableSwiper(){
+   blogSwiper = new Swiper (".swiper", {
+      loop: true,
+      modules: [Pagination],
+      direction: 'horizontal',
+      centeredSlides: "true",
+      spaceBetween: 22,
+      grabCursor:true,
+      pagination:{
+          el: '.swiper-pagination',
+      },
+      breakpoints: {
+        0 : {
+          
+        },
+        576 : {
+          initialSlide:0,
+          slidesPerView: 2,
+        },
+  
+        992 : {
+          slidesPerView: 3,
+          initialSlide:1,
+        },
+        
+      }
+  })
+}
+
+const breakpoint = window.matchMedia('(max-width: 576px)');
+const breakpointChecker = function() {
+  if (breakpoint.matches == true && blogSwiper!=undefined){
+    blogSwiper.destroy(true, true);
+  }
+  else if (breakpoint.matches==false){
+    return enableSwiper();
+  }
+}
+breakpoint.addListener(breakpointChecker);
+breakpointChecker();
 
 
 $('.rate').raty({
@@ -73,27 +104,37 @@ function initMap() {
 let navList = document.querySelector(".user-nav__list");
 let navBar = document.querySelector(".user-nav");
 let isRelocated = false;
+let imgToReplace = document.querySelector(".effects__img");
+let joinUs = document.querySelector(".join-us__img--front");
 relocateNav();
 window.onresize = relocateNav;
 function relocateNav(){
   const neededWidth = 875;
-  console.log(document.documentElement.scrollWidth);
-  if (document.documentElement.scrollWidth <= neededWidth && document.documentElement.scrollWidth > 755 && isRelocated == false){
+  console.log(document.documentElement.clientWidth);
+  if (document.documentElement.clientWidth <= neededWidth && document.documentElement.clientWidth > 768 && isRelocated == false){
     document.querySelector(".header").appendChild(navList);
     isRelocated = true;
-    navList.classList.toggle("user-nav__list--relocated");
+    navList.classList.add("user-nav__list--relocated");
   }
-  if(document.documentElement.scrollWidth > neededWidth && isRelocated == true){
+  if(document.documentElement.clientWidth > neededWidth && isRelocated == true){
     document.querySelector(".header__nav").prepend(navList);
-    navList.classList.toggle("user-nav__list--relocated");
+    navList.classList.remove("user-nav__list--relocated");
     isRelocated = false;
   }
-  if (document.documentElement.scrollWidth <= 755) {
+  if (document.documentElement.clientWidth <= 768) {
     document.querySelector(".header__nav").prepend(navList);
     if (navList.classList.contains("user-nav__list--relocated"))
     navList.classList.remove("user-nav__list--relocated");
-
+    isRelocated = false;
   }
+  if (document.documentElement.clientWidth <= neededWidth && imgToReplace!=undefined){
+    imgToReplace.src ="img/effect-second.png";
+  }
+
+  if (document.documentElement.clientWidth <= neededWidth && joinUs!=undefined){
+    joinUs.src = "img/join-us.png";
+  }
+  
 }
 let burgerBtn = document.querySelector(".header__burger-menu");
 burgerBtn.addEventListener("click", function(){

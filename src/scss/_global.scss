@@ -10,12 +10,20 @@ body{
         .logo{
             color: #fff;
         }
+        .category{
+            &__tag{
+                color:#fff;
+            }
+        }
         .user-nav{
             &__link{
                 color: #fff;
             }
             &__btn{
                 color: #fff;
+                &--login{
+                    color: #54b3d6;
+                }
             }
         }
         .header{
@@ -102,6 +110,7 @@ body{
         }
         .join-us{
             &__input{
+                color:#fff;
                 background-color: transparent;
                 &::placeholder{
                     color:#fff;

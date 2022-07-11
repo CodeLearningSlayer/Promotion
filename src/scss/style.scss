@@ -126,6 +126,23 @@ ul.user-nav__list{
     }
 }
 
+.user-nav{
+    &__list--relocated{
+        justify-content: center;
+        .user-nav__item{
+            font-size: 24px;
+            line-height: 48px;
+        }
+        .user-nav__item + .user-nav__item{
+            margin-left: 30px;
+        }
+    }
+}
+ul.user-nav__list--relocated{
+    margin: 0;
+    margin-top: 20px;
+}
+
 .start{
     padding: 25px 0 110px;
     &__inner{
@@ -290,6 +307,12 @@ ul.user-nav__list{
     }
 }
 
+.support{
+    .advantages__wrapper{
+        margin-left: 94px;
+    }
+}
+
 .support-list{
     
     &__item{
@@ -371,7 +394,6 @@ ul.user-nav__list{
     &__item{
         display: flex;
         align-items: center;
-        margin-left: 16px;
         &:nth-child(2),
         &:nth-child(3){
                 flex-direction: row-reverse;
@@ -426,12 +448,18 @@ ul.user-nav__list{
     max-width: 348px;
     margin-right: 22px;
     border-radius:16px;
+    overflow: hidden;
+    display: flex;
+    height: auto;
+    flex-direction: column;
     &__info{
         display: block;
     }
     &__inner{
+        flex-grow: 2;
         padding-left: 24px;
         padding-top: 24px;
+        padding-right: 5px;
     }
     &__author{
         color:#22343D;
@@ -652,6 +680,7 @@ ul.advantages-list{
     justify-content: space-between; 
     background-color: $green;
     border-radius: 32px;
+    align-items: center;
     &__left{
         padding-top: 49px;
         padding-left: 51px;
@@ -668,6 +697,11 @@ ul.advantages-list{
         background-color: #fff;
         color:$green;
         padding: 13px 35px 7px;
+        display: inline-block;
+        margin-bottom: 40px;
+    }
+    &__link{
+        color:#22343D;
     }
 }
 
@@ -678,6 +712,7 @@ ul.advantages-list{
      }
      &__social-list{
         display: flex;
+        justify-content: center;
      }
      .logo{
         margin-bottom: 24px;
@@ -746,6 +781,7 @@ ul.advantages-list{
     &__bottom{
         margin-top: 15px;
         text-align: center;
+        margin-bottom: 30px;
     }
 }
 
@@ -820,7 +856,7 @@ ul.advantages-list{
 }
 
 .work{
-    padding: 101px 115px;
+    padding: 101px 41px 115px;
     &__title{
         margin-bottom: 73px;
     }
@@ -843,6 +879,7 @@ ul.advantages-list{
         flex-direction: row-reverse;
         .step__info-box{
             margin-right: 76px;
+            margin-left: 0;
         }
     }
     &__info-box{
@@ -871,7 +908,7 @@ ul.advantages-list{
 }
 
 .join{
-    padding: 35px 45px;
+    padding: 35px 0 45px;
     &__title{
         max-width: 537px;
         margin: 0 auto;
@@ -946,7 +983,7 @@ ul.advantages-list{
 .plan{
     background: linear-gradient(#f6f6f6, #fff);
     text-align: center;
-    padding: 51px 51px;
+    padding: 51px 0 51px;
     margin-bottom: 150px;
     &__section-name{
         text-transform: uppercase;
@@ -1028,6 +1065,9 @@ ul.advantages-list{
             background-image: url("@img/effects-icons/3.svg");
         }
     }
+    &__img-box{
+        margin-right: 60px;
+    }
 }
 
 .questions{
@@ -1101,12 +1141,14 @@ ul.advantages-list{
     }
     &__answer--toggled{
         max-height: 1000px;
-        padding: 0;
+        padding: 0px;
+        padding-bottom: 10px;
     }
 }
 
 .join-us{
     padding: 76px 0 66px;
+    overflow: hidden;
     &__inner{
         display: flex;
         justify-content: space-between;
@@ -1229,6 +1271,7 @@ ul.advantages-list{
     margin: 0 auto;
     width: 100%;;
     height: 323px;
+    border-radius: 20px;
     margin-bottom: 50px;
 }
 

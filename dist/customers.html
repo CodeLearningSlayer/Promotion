@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.min.css?__v=20220711184655" />
     <title>Document</title>
   </head>
   <body>
@@ -93,7 +93,7 @@
       </div>
     </header>
 
-    <section class="clients">
+    <section class="clients overlay">
       <div class="container">
         <h3 class="clients__title">Our Clients</h3>
         <div class="clients__wrapper">
@@ -137,7 +137,7 @@
       </div>
     </section>
 
-    <section class="reason">
+   <section class="reason overlay">
       <div class="container">
         <h4 class="reason__title">Why Choose Product?</h4>
         <div class="reason__items">
@@ -175,11 +175,13 @@
       </div>
     </section>
 
-    <section class="work">
+    <section class="work overlay">
       <div class="container">
         <div class="work__title section-title">How Product Work?</div>
         <div class="work__step step">
-          <img src="img/steps/1.png" alt="" class="step__img" />
+          <div class="step__img-box">
+            <picture><source srcset="img/steps/1.webp" type="image/webp"><img src="img/steps/1.png" alt="" class="step__img" /></picture>
+          </div>
           <div class="step__info-box">
             <div class="step__number">STEP 1</div>
             <h5 class="step__title">Apply for a product</h5>
@@ -191,7 +193,9 @@
           </div>
         </div>
         <div class="work__step step">
-          <img src="img/steps/2.png" alt="" class="step__img" />
+          <div class="step__img-box">
+            <picture><source srcset="img/steps/2.webp" type="image/webp"><img src="img/steps/2.png" alt="" class="step__img" /></picture>
+          </div>
           <div class="step__info-box">
             <div class="step__number">STEP 2</div>
             <h5 class="step__title">Pay fully refundable</h5>
@@ -203,7 +207,9 @@
           </div>
         </div>
         <div class="work__step step">
-          <img src="img/steps/3.png" alt="" class="step__img" />
+          <div class="step__img-box">
+            <picture><source srcset="img/steps/3.webp" type="image/webp"><img src="img/steps/3.png" alt="" class="step__img" /></picture>
+          </div>
           <div class="step__info-box">
             <div class="step__number">STEP 3</div>
             <h5 class="step__title">Completion</h5>
@@ -219,7 +225,8 @@
       </div>
     </section>
 
-    <section class="join">
+
+    <section class="join overlay">
       <div class="container">
         <h5 class="join__title title">
           Join thousand of other who have already received offers
@@ -267,17 +274,19 @@
             </div>
         </div>
       </div>
-    </section>
+    </section> 
 
         <section class="banner overlay">
         <div class="container">
             <div class="banner-block">
                 <div class="banner-block__left">
                     <h4 class="banner-block__info">Join 100 Compannies who boost their business with Product</h4>
-                    <a class="banner-block__btn" href="#">Get this</a>
+                    <div class="banner-block__btn">
+                        <a class="banner-block__link" href="#">Get this</a>
+                    </div>
                 </div>
                 <div class="banner-block__images">
-                    <img class="banner-block__img" src="img/icons/statistics.png"></img>
+                    <picture><source srcset="img/icons/statistics.webp" type="image/webp"><img class="banner-block__img" src="img/icons/statistics.png"></picture></img>
                 </div>
             </div>
         </div>
@@ -450,5 +459,5 @@
 </footer>
 
   </body>
-  <script src="js/app.min.js"></script>
+  <script src="js/app.min.js?__v=20220711184655"></script>
 </html>
